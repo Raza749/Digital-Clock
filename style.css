@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-image: url("./assets/images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.container h1{
+    font-size: 110px;
+    /* margin: 20px 0; */
+    color: crimson;
+    font-family:"Poppins";
+    font-weight: 600;
+    height: 20%;
+}
+
+.container .clock{
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.177);
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.482);
+    box-shadow: 5px 5px 5px 4px rgba(0, 0, 0, 0.248);
+    flex-direction: column;
+}
+
+.container .clock .show{
+    font-size: 70px;
+    font-family: monospace;
+    font-weight: 600;
+    color: black;
+}
+
+
+footer{
+    height: 13%;
+    width: 100%;
+    background-color: rgba(52, 50, 50, 0.162);
+    position: absolute;
+    bottom: 0;
+    backdrop-filter: blue(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    font-size: 26px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+/* For Mobile devices */
+@media(max-width:767px){
+    .container h1{
+        font-size: 40px;
+    }
+
+    .container .clock{
+        width: 80%;
+        height: 30%;
+    }
+
+    .container .clock .show{
+        font-size: 34px;
+    }
+
+    footer p{
+        font-size: 16px;
+    }
+
+}
